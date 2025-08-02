@@ -1,0 +1,635 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.bank:apiGateway-service >---------------------
+[INFO] Building apiGateway-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.1.2:run (default-cli) > test-compile @ apiGateway-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apiGateway-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ apiGateway-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ apiGateway-service ---
+[INFO] skip non existing resourceDirectory C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ apiGateway-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.1.2:run (default-cli) < test-compile @ apiGateway-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.2:run (default-cli) @ apiGateway-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T14:44:11.772+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Starting ApiGatewayApplication using Java 17.0.15 with PID 12964 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service)
+2025-08-02T14:44:11.774+05:30 DEBUG 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T14:44:11.776+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T14:44:11.838+05:30  INFO 12964 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ashutosh\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.0.0\ojdbc17-23.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Ashutosh/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.0.0/oraclepki.jar
+2025-08-02T14:44:11.838+05:30  INFO 12964 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-02T14:44:11.838+05:30  INFO 12964 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-02T14:44:12.986+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8fffed61-99f5-30a5-8d20-4dbd0f900900
+2025-08-02T14:44:13.091+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:13.092+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:13.093+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:14.205+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='kyc-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/kyc/api/**}}], filters=[], uri=lb://kyc-service, order=0, metadata={}}, RouteDefinition{id='customer-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/customers/**}}], filters=[], uri=lb://customer-service, order=0, metadata={}}, RouteDefinition{id='account-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/account-api/**}}], filters=[], uri=lb://account-service, order=0, metadata={}}]
+2025-08-02T14:44:14.474+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-08-02T14:44:14.475+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-08-02T14:44:14.476+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-02T14:44:14.476+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-02T14:44:14.476+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-08-02T14:44:14.476+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-02T14:44:14.736+05:30  WARN 12964 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T14:44:14.745+05:30  INFO 12964 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T14:44:15.349+05:30  WARN 12964 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T14:44:15.375+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T14:44:15.455+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T14:44:15.460+05:30  INFO 12964 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:44:15.484+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T14:44:15.485+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T14:44:15.485+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T14:44:15.485+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T14:44:15.485+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T14:44:15.486+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T14:44:15.486+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T14:44:15.886+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T14:44:15.889+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T14:44:15.892+05:30  INFO 12964 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T14:44:15.897+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754126055896 with initial instances count: 2
+2025-08-02T14:44:15.898+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2025-08-02T14:44:15.899+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754126055899, current=UP, previous=STARTING]
+2025-08-02T14:44:15.900+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080: registering service...
+2025-08-02T14:44:15.925+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:44:15.944+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:44:15.944+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:44:15.945+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:44:15.945+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:44:15.946+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:44:15.952+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 - registration status: 204
+2025-08-02T14:44:16.247+05:30  INFO 12964 --- [  restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2025-08-02T14:44:16.249+05:30  INFO 12964 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-08-02T14:44:16.793+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:44:16.795+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:44:16.796+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:44:16.797+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:44:16.797+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:44:16.798+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:44:16.803+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Started ApiGatewayApplication in 5.907 seconds (process running for 6.706)
+2025-08-02T14:44:45.928+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:44:45.931+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:44:45.932+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:44:45.934+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:44:45.934+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:44:45.936+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:45:15.967+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:45:15.970+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:45:15.971+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:45:15.972+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:45:15.972+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:45:15.973+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:45:46.000+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:45:46.002+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:45:46.002+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:45:46.005+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:45:46.006+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:45:46.006+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:46:16.028+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:46:46.067+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:46:46.073+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:46:46.073+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:46:46.074+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:46:46.074+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:46:46.076+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:47:11.078+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-registration
+2025-08-02T14:47:11.081+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: POST http://localhost:8080/customers/register] to Route{id='customer-registration', uri=lb://customer-service, order=0, predicate=Paths: [/customers/register], match trailing slash: true, gatewayFilters=[], metadata={}}
+2025-08-02T14:47:11.083+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.h.RoutePredicateHandlerMapping   : [54a4e65c-2] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:47:11.083+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:47:11.182+05:30 DEBUG 12964 --- [ctor-http-nio-4] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:47:16.112+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:47:16.114+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:47:16.114+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:47:16.116+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:47:16.116+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:47:16.118+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:47:46.157+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:47:46.157+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:47:46.157+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:47:46.157+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:47:46.163+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:47:46.163+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:48:16.196+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:48:16.197+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:48:16.199+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:48:16.199+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:48:16.199+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:48:16.199+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:48:46.232+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:48:46.234+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:48:46.234+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:48:46.234+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:48:46.234+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:48:46.234+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:49:15.492+05:30  INFO 12964 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:49:16.269+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:49:16.272+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:49:16.272+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:49:16.274+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:49:16.274+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:49:16.275+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:49:46.296+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:50:16.321+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:50:46.349+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:50:46.352+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:50:46.352+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:50:46.352+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:50:46.352+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:50:46.352+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:16.390+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:51:16.392+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:51:16.392+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:51:16.393+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:51:16.393+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:51:16.394+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:32.940+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-health
+2025-08-02T14:51:32.946+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/health/customer] to Route{id='customer-health', uri=lb://customer-service, order=0, predicate=Paths: [/health/customer], match trailing slash: true, gatewayFilters=[[[RewritePath /health/customer = '/customers/hello'], order = 0]], metadata={}}
+2025-08-02T14:51:32.946+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-3] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:51:32.948+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [[RewritePath /health/customer = '/customers/hello'], order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:51:37.956+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: account-health
+2025-08-02T14:51:37.956+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/health/account] to Route{id='account-health', uri=lb://account-service, order=0, predicate=Paths: [/health/account], match trailing slash: true, gatewayFilters=[[[RewritePath /health/account = '/account-api/accounts/health'], order = 0]], metadata={}}
+2025-08-02T14:51:37.956+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-4] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:51:37.956+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [[RewritePath /health/account = '/account-api/accounts/health'], order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:51:37.998+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:51:37.998+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:51:37.998+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:51:38.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:51:38.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:51:38.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:42.192+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: auth-health
+2025-08-02T14:51:42.192+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/health/auth] to Route{id='auth-health', uri=lb://auth-service, order=0, predicate=Paths: [/health/auth], match trailing slash: true, gatewayFilters=[[[RewritePath /health/auth = '/auth/health'], order = 0]], metadata={}}
+2025-08-02T14:51:42.192+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-5] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:51:42.192+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [[RewritePath /health/auth = '/auth/health'], order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:51:42.233+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:42.241+05:30  WARN 12964 --- [ctor-http-nio-5] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: auth-service
+2025-08-02T14:51:46.421+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:51:46.427+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:51:46.427+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:51:46.427+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:51:46.427+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:51:46.427+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:55.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: kyc-health
+2025-08-02T14:51:55.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/health/kyc] to Route{id='kyc-health', uri=lb://kyc-service, order=0, predicate=Paths: [/health/kyc], match trailing slash: true, gatewayFilters=[[[RewritePath /health/kyc = '/kyc/api/health'], order = 0]], metadata={}}
+2025-08-02T14:51:55.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-6] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:51:55.002+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [[RewritePath /health/kyc = '/kyc/api/health'], order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:51:55.038+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:51:55.042+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:51:55.042+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:51:55.042+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:51:55.042+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:51:55.042+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:51:55.042+05:30  WARN 12964 --- [ctor-http-nio-5] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: kyc-service
+2025-08-02T14:52:01.143+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: admin-health
+2025-08-02T14:52:01.143+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/health/admin] to Route{id='admin-health', uri=lb://admin-service, order=0, predicate=Paths: [/health/admin], match trailing slash: true, gatewayFilters=[[[RewritePath /health/admin = '/admin/api/health'], order = 0]], metadata={}}
+2025-08-02T14:52:01.143+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-7] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:52:01.143+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [[RewritePath /health/admin = '/admin/api/health'], order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:52:01.176+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:52:16.449+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:52:16.453+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:52:16.453+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:52:16.454+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:52:16.454+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:52:16.454+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:52:19.855+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-service-protected
+2025-08-02T14:52:19.855+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/customers/login] to Route{id='customer-service-protected', uri=lb://customer-service, order=0, predicate=Paths: [/customers/**], match trailing slash: true, gatewayFilters=[[com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0]], metadata={}}
+2025-08-02T14:52:19.855+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-8] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:52:19.855+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:52:27.570+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-registration
+2025-08-02T14:52:27.570+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/customers/register] to Route{id='customer-registration', uri=lb://customer-service, order=0, predicate=Paths: [/customers/register], match trailing slash: true, gatewayFilters=[], metadata={}}
+2025-08-02T14:52:27.570+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-9] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:52:27.570+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:52:44.630+05:30 DEBUG 12964 --- [ctor-http-nio-7] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-service-protected
+2025-08-02T14:52:44.630+05:30 DEBUG 12964 --- [ctor-http-nio-7] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/customers/bab2be86-589b-43b3-b83d-59bbc4a63a89] to Route{id='customer-service-protected', uri=lb://customer-service, order=0, predicate=Paths: [/customers/**], match trailing slash: true, gatewayFilters=[[com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0]], metadata={}}
+2025-08-02T14:52:44.630+05:30 DEBUG 12964 --- [ctor-http-nio-7] o.s.c.g.h.RoutePredicateHandlerMapping   : [36b0c885-10] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:52:44.630+05:30 DEBUG 12964 --- [ctor-http-nio-7] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:52:46.479+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:52:46.481+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:52:46.481+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:52:46.485+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:52:46.485+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:52:46.485+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:52:53.107+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: customer-service-protected
+2025-08-02T14:52:53.107+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/customers/dashboard/bab2be86-589b-43b3-b83d-59bbc4a63a89] to Route{id='customer-service-protected', uri=lb://customer-service, order=0, predicate=Paths: [/customers/**], match trailing slash: true, gatewayFilters=[[com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0]], metadata={}}
+2025-08-02T14:52:53.107+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-11] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:52:53.107+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@7c5ea0dd, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:53:16.506+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:53:46.543+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:53:46.544+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:53:46.544+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:53:46.544+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:53:46.544+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:53:46.544+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:54:15.500+05:30  INFO 12964 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:54:16.580+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:54:16.580+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:54:16.580+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:54:16.591+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:54:16.591+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:54:16.593+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:54:46.631+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:54:46.633+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:54:46.633+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:54:46.637+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:54:46.637+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:54:46.639+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:55:16.666+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:55:16.668+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:55:16.668+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:55:16.668+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:55:16.668+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:55:16.673+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:55:46.707+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:55:46.714+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:55:46.714+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:55:46.714+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:55:46.714+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:55:46.714+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:56:16.757+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:56:16.757+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:56:16.757+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:56:16.765+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:56:16.765+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:56:16.766+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:56:46.806+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:56:46.808+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:56:46.808+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:56:46.808+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:56:46.808+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:56:46.808+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:57:02.903+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: admin-service
+2025-08-02T14:57:02.905+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/admin/hello] to Route{id='admin-service', uri=lb://admin-service, order=0, predicate=Paths: [/admin/**], match trailing slash: true, gatewayFilters=[[com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@46558365, order = 0]], metadata={}}
+2025-08-02T14:57:02.905+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.h.RoutePredicateHandlerMapping   : [37e44710-12] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@7061f5f1
+2025-08-02T14:57:02.905+05:30 DEBUG 12964 --- [ctor-http-nio-5] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@759c85d}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@56828e40}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@88c1174}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23b1a149}, order = 0], [com.bank.filter.JwtAuthenticationFilter$$Lambda$552/0x000001733f3e0480@46558365, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@10fb45d6}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@514bd23a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@2877f858}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6a638e42}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@4c02ff89}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@4bde0ef7}, order = 2147483647]]
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:57:16.849+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:57:46.879+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:58:16.913+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:58:16.913+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:58:16.913+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:58:16.919+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:58:16.919+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:58:16.919+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T14:58:46.943+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T14:58:46.945+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T14:58:46.947+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T14:58:46.948+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T14:58:46.948+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T14:58:46.949+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:19:16.792+05:30  INFO 12964 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:19:18.205+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:19:18.205+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:19:18.205+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:19:18.213+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:19:18.213+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:19:18.221+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:19:48.258+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:19:48.259+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:19:48.259+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:19:48.259+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:19:48.259+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:19:48.260+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:20:18.292+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:20:18.294+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:20:18.297+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:20:18.299+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:20:18.299+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:20:18.299+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:20:48.324+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:20:48.327+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:20:48.327+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:20:48.330+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:20:48.330+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:20:48.331+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:21:18.357+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:21:18.359+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:21:18.359+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:21:18.360+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:21:18.361+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:21:18.362+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:21:48.388+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:21:48.391+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:21:48.391+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:21:48.393+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:21:48.393+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:21:48.394+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:22:18.433+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:22:18.436+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:22:18.436+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:22:18.439+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:22:18.439+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:22:18.440+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:22:48.469+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:22:48.470+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:22:48.470+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:22:48.472+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:22:48.472+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:22:48.475+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:18.514+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:23:18.516+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:23:18.516+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:23:18.517+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:23:18.517+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:23:18.518+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:25.904+05:30  INFO 12964 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-02T21:23:25.908+05:30  INFO 12964 --- [       Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2025-08-02T21:23:25.909+05:30  INFO 12964 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150005909, current=DOWN, previous=UP]
+2025-08-02T21:23:25.909+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080: registering service...
+2025-08-02T21:23:25.932+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 - registration status: 204
+2025-08-02T21:23:25.938+05:30  INFO 12964 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T21:23:28.954+05:30  INFO 12964 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-02T21:23:28.970+05:30  INFO 12964 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 - deregister  status: 200
+2025-08-02T21:23:28.981+05:30  INFO 12964 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T21:23:30.983+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Starting ApiGatewayApplication using Java 17.0.15 with PID 12964 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service)
+2025-08-02T21:23:30.984+05:30 DEBUG 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T21:23:30.984+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T21:23:31.492+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8fffed61-99f5-30a5-8d20-4dbd0f900900
+2025-08-02T21:23:31.514+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:31.516+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:31.516+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:33.478+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:33.594+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='kyc-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/kyc/api/**}}], filters=[], uri=lb://kyc-service, order=0, metadata={}}, RouteDefinition{id='customer-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/customers/**}}], filters=[], uri=lb://customer-service, order=0, metadata={}}, RouteDefinition{id='account-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/account-api/**}}], filters=[], uri=lb://account-service, order=0, metadata={}}]
+2025-08-02T21:23:33.660+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-02T21:23:33.661+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-02T21:23:33.662+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-08-02T21:23:33.662+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-02T21:23:33.765+05:30  WARN 12964 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T21:23:33.774+05:30  INFO 12964 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T21:23:35.229+05:30  INFO 12964 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (2 additions, 0 deletions, 6 modifications)
+2025-08-02T21:23:35.544+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:37.374+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:37.421+05:30  WARN 12964 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T21:23:37.435+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T21:23:37.439+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T21:23:37.439+05:30  INFO 12964 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:23:37.450+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T21:23:37.450+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T21:23:37.451+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T21:23:37.451+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T21:23:37.451+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T21:23:37.451+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T21:23:37.451+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T21:23:37.531+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T21:23:37.537+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T21:23:37.541+05:30  INFO 12964 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T21:23:37.544+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754150017544 with initial instances count: 4
+2025-08-02T21:23:37.546+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2025-08-02T21:23:37.546+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150017546, current=UP, previous=STARTING]
+2025-08-02T21:23:37.547+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080: registering service...
+2025-08-02T21:23:37.548+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:23:37.565+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:23:37.565+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:23:37.567+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:23:37.567+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:23:37.568+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:37.574+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080 - registration status: 204
+2025-08-02T21:23:37.706+05:30  INFO 12964 --- [  restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2025-08-02T21:23:37.708+05:30  INFO 12964 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-08-02T21:23:39.556+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:41.430+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:41.441+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:23:41.442+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:23:41.443+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:23:41.445+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:23:41.445+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:23:41.446+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:41.449+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Started ApiGatewayApplication in 12.331 seconds (process running for 23971.351)
+2025-08-02T21:23:41.449+05:30  INFO 12964 --- [      Thread-30] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2025-08-02T21:23:41.450+05:30  INFO 12964 --- [      Thread-30] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150021450, current=DOWN, previous=UP]
+2025-08-02T21:23:41.450+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080: registering service...
+2025-08-02T21:23:41.455+05:30  INFO 12964 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-02T21:23:41.470+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080 - registration status: 204
+2025-08-02T21:23:41.477+05:30  INFO 12964 --- [      Thread-30] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T21:23:44.493+05:30  INFO 12964 --- [      Thread-30] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-02T21:23:44.512+05:30  INFO 12964 --- [      Thread-30] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080 - deregister  status: 200
+2025-08-02T21:23:44.521+05:30  INFO 12964 --- [      Thread-30] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T21:23:46.452+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Starting ApiGatewayApplication using Java 17.0.15 with PID 12964 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\apiGateway-service)
+2025-08-02T21:23:46.452+05:30 DEBUG 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T21:23:46.453+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T21:23:46.901+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8fffed61-99f5-30a5-8d20-4dbd0f900900
+2025-08-02T21:23:46.914+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:46.915+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:46.916+05:30  INFO 12964 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:48.843+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:48.932+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='kyc-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/kyc/api/**}}], filters=[], uri=lb://kyc-service, order=0, metadata={}}, RouteDefinition{id='customer-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/customers/**}}], filters=[], uri=lb://customer-service, order=0, metadata={}}, RouteDefinition{id='account-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/account-api/**}}], filters=[], uri=lb://account-service, order=0, metadata={}}]
+2025-08-02T21:23:48.980+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-08-02T21:23:48.980+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-08-02T21:23:48.980+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-08-02T21:23:48.981+05:30  INFO 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-02T21:23:49.082+05:30  WARN 12964 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T21:23:49.090+05:30  INFO 12964 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T21:23:50.931+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:52.791+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:52.815+05:30  WARN 12964 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T21:23:52.835+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T21:23:52.843+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T21:23:52.844+05:30  INFO 12964 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:23:52.852+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T21:23:52.854+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T21:23:52.898+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T21:23:52.900+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T21:23:52.903+05:30  INFO 12964 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T21:23:52.906+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754150032905 with initial instances count: 4
+2025-08-02T21:23:52.907+05:30  INFO 12964 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2025-08-02T21:23:52.908+05:30  INFO 12964 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150032908, current=UP, previous=STARTING]
+2025-08-02T21:23:52.908+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080: registering service...
+2025-08-02T21:23:52.910+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:23:52.927+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:23:52.927+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:23:52.929+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:23:52.929+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:23:52.930+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:52.932+05:30  INFO 12964 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:8080 - registration status: 204
+2025-08-02T21:23:53.090+05:30  INFO 12964 --- [  restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2025-08-02T21:23:53.091+05:30  INFO 12964 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-08-02T21:23:54.865+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:56.767+05:30  INFO 12964 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:56.777+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:23:56.779+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:23:56.779+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:23:56.780+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:23:56.781+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:23:56.781+05:30 DEBUG 12964 --- [  restartedMain] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:23:56.783+05:30  INFO 12964 --- [  restartedMain] com.bank.ApiGatewayApplication           : Started ApiGatewayApplication in 12.137 seconds (process running for 23986.685)
+2025-08-02T21:23:56.786+05:30  INFO 12964 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-02T21:24:22.937+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:24:22.939+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:24:22.939+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:24:22.941+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:24:22.941+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:24:22.942+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:24:52.971+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:24:52.973+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:24:52.973+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:24:52.974+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:24:52.974+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:24:52.975+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:25:23.012+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:25:23.014+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:25:23.014+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:25:23.015+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:25:23.015+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:25:23.016+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:25:53.042+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:25:53.044+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:25:53.044+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:25:53.045+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:25:53.045+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:25:53.045+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:26:23.079+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:26:23.082+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:26:23.082+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:26:23.084+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:26:23.085+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:26:23.086+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:26:53.121+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:26:53.123+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:26:53.123+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:26:53.124+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:26:53.124+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:26:53.125+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:27:23.150+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:27:23.151+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:27:23.151+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:27:23.152+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:27:23.152+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:27:23.152+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:27:53.174+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:27:53.177+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:27:53.178+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:27:53.179+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:27:53.179+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:27:53.180+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+2025-08-02T21:28:23.202+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition kyc-service applying {_genkey_0=/kyc/api/**} to Path
+2025-08-02T21:28:23.203+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: kyc-service
+2025-08-02T21:28:23.203+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition customer-service applying {_genkey_0=/customers/**} to Path
+2025-08-02T21:28:23.204+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: customer-service
+2025-08-02T21:28:23.204+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition account-service applying {_genkey_0=/account-api/**} to Path
+2025-08-02T21:28:23.204+05:30 DEBUG 12964 --- [freshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: account-service
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:44 h
+[INFO] Finished at: 2025-08-02T21:28:35+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.1.2:run (default-cli) on project apiGateway-service: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

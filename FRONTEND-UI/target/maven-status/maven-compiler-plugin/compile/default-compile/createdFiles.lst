@@ -1,0 +1,3 @@
+com\bank\BankingUiApplication.class
+com\bank\controller\RestTemplateConfig.class
+com\bank\controller\UIController.class

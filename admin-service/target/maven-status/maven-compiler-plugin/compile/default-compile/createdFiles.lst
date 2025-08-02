@@ -1,0 +1,13 @@
+com\bank\exception\AccountNotFoundException.class
+com\bank\controller\AdminController.class
+com\bank\model\KYCDocument.class
+com\bank\model\Customer.class
+com\bank\model\Transaction.class
+com\bank\services\AdminService.class
+com\bank\proxy\AccountProxy.class
+com\bank\model\Account.class
+com\bank\proxy\CustomerProxy.class
+com\bank\proxy\KYCProxy.class
+com\bank\exception\CustomerNotFoundException.class
+com\bank\AdminServiceApplication.class
+com\bank\serviceImpl\AdminServiceImpl.class

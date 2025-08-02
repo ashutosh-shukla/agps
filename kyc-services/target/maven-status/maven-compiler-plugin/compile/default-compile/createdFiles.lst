@@ -1,0 +1,10 @@
+com\bank\utils\JspUtil.class
+com\bank\controller\KYCController.class
+com\bank\KYCApplication.class
+com\bank\model\KYCDocument.class
+com\bank\repository\KYCDocumentRepository.class
+com\bank\servicesImpl\KYCDocumentServiceImpl.class
+com\bank\configuration\JspFunctions.class
+com\bank\configuration\WebConfig.class
+com\bank\services\KYCDocumentService.class
+com\bank\utils\FileUtil.class

@@ -1,0 +1,180 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.bank:frontend-ui >------------------------
+[INFO] Building frontend-ui 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.1.2:run (default-cli) > test-compile @ frontend-ui >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ frontend-ui ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ frontend-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ frontend-ui ---
+[INFO] skip non existing resourceDirectory C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\kyc-services\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ frontend-ui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.1.2:run (default-cli) < test-compile @ frontend-ui <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.2:run (default-cli) @ frontend-ui ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T14:43:52.416+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : Starting KYCApplication using Java 17.0.15 with PID 35968 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\kyc-services\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\kyc-services)
+2025-08-02T14:43:52.417+05:30 DEBUG 35968 --- [  restartedMain] com.bank.KYCApplication                  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T14:43:52.418+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T14:43:52.477+05:30  INFO 35968 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ashutosh\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.0.0\ojdbc17-23.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Ashutosh/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.0.0/oraclepki.jar
+2025-08-02T14:43:52.477+05:30  INFO 35968 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-02T14:43:52.477+05:30  INFO 35968 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-02T14:43:53.256+05:30  INFO 35968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T14:43:53.415+05:30  INFO 35968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interfaces.
+2025-08-02T14:43:53.672+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51f23b6d-7735-32f1-ac2c-5b0afb1f4732
+2025-08-02T14:43:54.550+05:30  INFO 35968 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6061 (http)
+2025-08-02T14:43:54.567+05:30  INFO 35968 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T14:43:54.568+05:30  INFO 35968 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-08-02T14:43:54.959+05:30  INFO 35968 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-08-02T14:43:54.974+05:30  INFO 35968 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T14:43:54.979+05:30  INFO 35968 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2496 ms
+2025-08-02T14:43:55.267+05:30  INFO 35968 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T14:43:55.351+05:30  INFO 35968 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-08-02T14:43:55.354+05:30  INFO 35968 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-08-02T14:43:55.543+05:30  INFO 35968 --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-08-02T14:43:55.717+05:30  INFO 35968 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T14:43:55.744+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T14:43:56.233+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@561f76a0
+2025-08-02T14:43:56.236+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T14:43:56.844+05:30  INFO 35968 --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-08-02T14:43:57.888+05:30  INFO 35968 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-02T14:43:57.893+05:30  INFO 35968 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T14:43:58.292+05:30  INFO 35968 --- [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-02T14:43:58.789+05:30  WARN 35968 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T14:43:59.356+05:30  WARN 35968 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T14:44:00.780+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T14:44:00.817+05:30  INFO 35968 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T14:44:02.205+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T14:44:02.272+05:30  WARN 35968 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T14:44:02.318+05:30  INFO 35968 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T14:44:02.363+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T14:44:02.370+05:30  INFO 35968 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:44:02.405+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T14:44:02.405+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T14:44:02.406+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T14:44:02.406+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T14:44:02.406+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T14:44:02.406+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T14:44:02.406+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T14:44:02.828+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T14:44:02.832+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T14:44:02.836+05:30  INFO 35968 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T14:44:02.840+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754126042840 with initial instances count: 2
+2025-08-02T14:44:02.844+05:30  INFO 35968 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application KYC-BACKEND with eureka with status UP
+2025-08-02T14:44:02.844+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754126042844, current=UP, previous=STARTING]
+2025-08-02T14:44:02.847+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061: registering service...
+2025-08-02T14:44:02.891+05:30  INFO 35968 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6061 (http) with context path ''
+2025-08-02T14:44:02.892+05:30  INFO 35968 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 6061
+2025-08-02T14:44:02.898+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061 - registration status: 204
+2025-08-02T14:44:04.346+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : Started KYCApplication in 13.709 seconds (process running for 14.428)
+2025-08-02T14:49:02.410+05:30  INFO 35968 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:54:02.413+05:30  INFO 35968 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:18:57.823+05:30  WARN 35968 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h20m31s308ms644µs900ns).
+2025-08-02T21:19:03.701+05:30  INFO 35968 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:24:03.722+05:30  INFO 35968 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:24:48.840+05:30  INFO 35968 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2025-08-02T21:24:48.845+05:30  INFO 35968 --- [       Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application KYC-BACKEND with eureka with status DOWN
+2025-08-02T21:24:48.845+05:30  INFO 35968 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150088845, current=DOWN, previous=UP]
+2025-08-02T21:24:48.845+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061: registering service...
+2025-08-02T21:24:48.879+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061 - registration status: 204
+2025-08-02T21:24:48.917+05:30  INFO 35968 --- [       Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-02T21:24:48.935+05:30  INFO 35968 --- [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T21:24:48.940+05:30  INFO 35968 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T21:24:48.965+05:30  INFO 35968 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T21:24:48.966+05:30  INFO 35968 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T21:24:51.969+05:30  INFO 35968 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-02T21:24:51.990+05:30  INFO 35968 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061 - deregister  status: 200
+2025-08-02T21:24:51.999+05:30  INFO 35968 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T21:24:54.081+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : Starting KYCApplication using Java 17.0.15 with PID 35968 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\kyc-services\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\kyc-services)
+2025-08-02T21:24:54.081+05:30 DEBUG 35968 --- [  restartedMain] com.bank.KYCApplication                  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T21:24:54.081+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T21:24:54.547+05:30  INFO 35968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T21:24:54.577+05:30  INFO 35968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2025-08-02T21:24:54.731+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51f23b6d-7735-32f1-ac2c-5b0afb1f4732
+2025-08-02T21:24:54.879+05:30  INFO 35968 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6061 (http)
+2025-08-02T21:24:54.881+05:30  INFO 35968 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T21:24:54.881+05:30  INFO 35968 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-08-02T21:24:55.162+05:30  INFO 35968 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-08-02T21:24:55.172+05:30  INFO 35968 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T21:24:55.173+05:30  INFO 35968 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1088 ms
+2025-08-02T21:24:55.267+05:30  INFO 35968 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T21:24:55.281+05:30  INFO 35968 --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-08-02T21:24:55.282+05:30  INFO 35968 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T21:24:55.284+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-02T21:24:55.448+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@67825b90
+2025-08-02T21:24:55.449+05:30  INFO 35968 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-02T21:24:55.490+05:30  INFO 35968 --- [  restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-08-02T21:24:55.580+05:30  INFO 35968 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-02T21:24:55.580+05:30  INFO 35968 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T21:24:55.752+05:30  WARN 35968 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T21:24:55.986+05:30  WARN 35968 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T21:24:57.837+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:24:57.870+05:30  INFO 35968 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T21:24:59.672+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:24:59.715+05:30  WARN 35968 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T21:24:59.758+05:30  INFO 35968 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T21:24:59.764+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T21:24:59.765+05:30  INFO 35968 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:24:59.781+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T21:24:59.782+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T21:24:59.826+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T21:24:59.829+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T21:24:59.832+05:30  INFO 35968 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T21:24:59.834+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754150099834 with initial instances count: 5
+2025-08-02T21:24:59.838+05:30  INFO 35968 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application KYC-BACKEND with eureka with status UP
+2025-08-02T21:24:59.839+05:30  INFO 35968 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150099838, current=UP, previous=STARTING]
+2025-08-02T21:24:59.839+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061: registering service...
+2025-08-02T21:24:59.865+05:30  INFO 35968 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_KYC-BACKEND/localhost:kyc-backend:6061 - registration status: 204
+2025-08-02T21:24:59.865+05:30  INFO 35968 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6061 (http) with context path ''
+2025-08-02T21:24:59.867+05:30  INFO 35968 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 6061
+2025-08-02T21:25:01.722+05:30  INFO 35968 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:25:01.735+05:30  INFO 35968 --- [  restartedMain] com.bank.KYCApplication                  : Started KYCApplication in 9.59 seconds (process running for 24071.817)
+2025-08-02T21:25:01.742+05:30  INFO 35968 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:44 h
+[INFO] Finished at: 2025-08-02T21:28:43+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.1.2:run (default-cli) on project frontend-ui: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

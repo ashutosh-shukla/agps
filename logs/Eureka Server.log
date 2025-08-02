@@ -1,0 +1,149 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.bank:eureka-server >-----------------------
+[INFO] Building eureka-server 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.3:run (default-cli) > test-compile @ eureka-server >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ eureka-server ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ eureka-server ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ eureka-server ---
+[INFO] skip non existing resourceDirectory C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\eureka-server\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ eureka-server ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.5.3:run (default-cli) < test-compile @ eureka-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.3:run (default-cli) @ eureka-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-08-02T14:42:44.196+05:30  INFO 11516 --- [eureka-server] [           main] com.oracle.EurekaServerApplication       : Starting EurekaServerApplication using Java 17.0.15 with PID 11516 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\eureka-server\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\eureka-server)
+2025-08-02T14:42:44.199+05:30  INFO 11516 --- [eureka-server] [           main] com.oracle.EurekaServerApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T14:42:45.481+05:30  INFO 11516 --- [eureka-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
+2025-08-02T14:42:45.909+05:30  INFO 11516 --- [eureka-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-08-02T14:42:45.925+05:30  INFO 11516 --- [eureka-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T14:42:45.925+05:30  INFO 11516 --- [eureka-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-02T14:42:46.052+05:30  INFO 11516 --- [eureka-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T14:42:46.052+05:30  INFO 11516 --- [eureka-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1781 ms
+2025-08-02T14:42:47.226+05:30  INFO 11516 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-08-02T14:42:47.226+05:30  INFO 11516 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-08-02T14:42:47.477+05:30  INFO 11516 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-08-02T14:42:47.477+05:30  INFO 11516 --- [eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-08-02T14:42:47.668+05:30  INFO 11516 --- [eureka-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-02T14:42:49.364+05:30  INFO 11516 --- [eureka-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T14:42:51.009+05:30  INFO 11516 --- [eureka-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T14:42:51.056+05:30  WARN 11516 --- [eureka-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T14:42:51.106+05:30  INFO 11516 --- [eureka-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T14:42:51.135+05:30  INFO 11516 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T14:42:51.135+05:30  INFO 11516 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-08-02T14:42:51.135+05:30  INFO 11516 --- [eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754125971135 with initial instances count: 0
+2025-08-02T14:42:51.203+05:30  INFO 11516 --- [eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-08-02T14:42:51.203+05:30  WARN 11516 --- [eureka-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-08-02T14:42:51.221+05:30  INFO 11516 --- [eureka-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-08-02T14:42:51.221+05:30  INFO 11516 --- [eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-08-02T14:42:51.234+05:30  INFO 11516 --- [eureka-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-02T14:42:51.304+05:30  INFO 11516 --- [eureka-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2025-08-02T14:42:51.322+05:30  INFO 11516 --- [eureka-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-08-02T14:42:51.323+05:30  INFO 11516 --- [eureka-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-08-02T14:42:51.323+05:30  INFO 11516 --- [eureka-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-08-02T14:42:51.323+05:30  INFO 11516 --- [eureka-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-08-02T14:42:51.323+05:30  INFO 11516 --- [eureka-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-08-02T14:42:51.326+05:30  INFO 11516 --- [eureka-server] [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-08-02T14:42:51.347+05:30  INFO 11516 --- [eureka-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-08-02T14:42:51.349+05:30  INFO 11516 --- [eureka-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-08-02T14:42:52.664+05:30  INFO 11516 --- [eureka-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T14:42:52.694+05:30  INFO 11516 --- [eureka-server] [           main] com.oracle.EurekaServerApplication       : Started EurekaServerApplication in 10.652 seconds (process running for 11.45)
+2025-08-02T14:43:44.741+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T14:43:44.742+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T14:43:44.744+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T14:43:45.093+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8081 with status UP (replication=false)
+2025-08-02T14:43:51.324+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-08-02T14:43:51.948+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/localhost:account-service:9091 with status UP (replication=false)
+2025-08-02T14:44:02.897+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance KYC-BACKEND/localhost:kyc-backend:6061 with status UP (replication=false)
+2025-08-02T14:44:07.668+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVICE/localhost:admin-service:8085 with status UP (replication=false)
+2025-08-02T14:44:15.951+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 with status UP (replication=false)
+2025-08-02T14:44:51.338+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-08-02T14:45:51.338+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-08-02T14:46:51.347+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-08-02T14:47:51.349+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-08-02T14:48:51.363+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-08-02T14:49:51.378+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2025-08-02T14:50:51.385+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-08-02T14:51:51.399+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-08-02T14:52:51.214+05:30  WARN 11516 --- [eureka-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-08-02T14:52:51.402+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-08-02T14:53:51.410+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-08-02T14:54:51.417+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-08-02T14:55:51.428+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2025-08-02T14:56:51.439+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-08-02T14:57:51.227+05:30  INFO 11516 --- [eureka-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2025-08-02T14:57:51.450+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2025-08-02T16:53:46.944+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6895493ms
+2025-08-02T21:19:52.760+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15905816ms
+2025-08-02T21:20:52.766+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-08-02T21:21:52.776+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-08-02T21:22:46.832+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/localhost:account-service:9091 with status DOWN (replication=false)
+2025-08-02T21:22:49.932+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ACCOUNT-SERVICE/localhost:account-service:9091 (replication=false)
+2025-08-02T21:22:52.505+05:30  WARN 11516 --- [eureka-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-08-02T21:22:52.787+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2025-08-02T21:22:56.871+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/localhost:account-service:9091 with status UP (replication=false)
+2025-08-02T21:22:58.565+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/localhost:account-service:9091 with status DOWN (replication=false)
+2025-08-02T21:22:58.609+05:30  INFO 11516 --- [eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVICE/localhost:admin-service:8085 with status DOWN (replication=false)
+2025-08-02T21:23:01.669+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ACCOUNT-SERVICE/localhost:account-service:9091 (replication=false)
+2025-08-02T21:23:01.762+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ADMIN-SERVICE/localhost:admin-service:8085 (replication=false)
+2025-08-02T21:23:09.263+05:30  INFO 11516 --- [eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVICE/localhost:admin-service:8085 with status UP (replication=false)
+2025-08-02T21:23:11.143+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVICE/localhost:admin-service:8085 with status DOWN (replication=false)
+2025-08-02T21:23:11.893+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/localhost:account-service:9091 with status UP (replication=false)
+2025-08-02T21:23:14.240+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ADMIN-SERVICE/localhost:admin-service:8085 (replication=false)
+2025-08-02T21:23:21.378+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADMIN-SERVICE/localhost:admin-service:8085 with status UP (replication=false)
+2025-08-02T21:23:25.929+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 with status DOWN (replication=false)
+2025-08-02T21:23:28.968+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/ashusshu-5CG5070Z6T:api-gateway:8080 (replication=false)
+2025-08-02T21:23:37.571+05:30  INFO 11516 --- [eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status UP (replication=false)
+2025-08-02T21:23:41.468+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status DOWN (replication=false)
+2025-08-02T21:23:44.510+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/localhost:api-gateway:8080 (replication=false)
+2025-08-02T21:23:52.791+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-08-02T21:23:52.930+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status UP (replication=false)
+2025-08-02T21:24:00.518+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8081 with status DOWN (replication=false)
+2025-08-02T21:24:03.642+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CUSTOMER-SERVICE/localhost:customer-service:8081 (replication=false)
+2025-08-02T21:24:13.202+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8081 with status UP (replication=false)
+2025-08-02T21:24:48.876+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance KYC-BACKEND/localhost:kyc-backend:6061 with status DOWN (replication=false)
+2025-08-02T21:24:51.984+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance KYC-BACKEND/localhost:kyc-backend:6061 (replication=false)
+2025-08-02T21:24:52.794+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-08-02T21:24:59.863+05:30  INFO 11516 --- [eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance KYC-BACKEND/localhost:kyc-backend:6061 with status UP (replication=false)
+2025-08-02T21:25:52.802+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-08-02T21:26:52.803+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-08-02T21:27:52.811+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-08-02T21:28:52.816+05:30  INFO 11516 --- [eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:46 h
+[INFO] Finished at: 2025-08-02T21:28:59+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.3:run (default-cli) on project eureka-server: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

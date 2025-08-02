@@ -1,0 +1,283 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.bank:admin-service >-----------------------
+[INFO] Building admin-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.1.2:run (default-cli) > test-compile @ admin-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ admin-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ admin-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ admin-service ---
+[INFO] skip non existing resourceDirectory C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ admin-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.1.2:run (default-cli) < test-compile @ admin-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.2:run (default-cli) @ admin-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T14:44:02.653+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Starting AdminServiceApplication using Java 17.0.15 with PID 39068 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service)
+2025-08-02T14:44:02.655+05:30 DEBUG 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T14:44:02.656+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T14:44:02.763+05:30  INFO 39068 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ashutosh\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.0.0\ojdbc17-23.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Ashutosh/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.0.0/oraclepki.jar
+2025-08-02T14:44:02.764+05:30  INFO 39068 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-02T14:44:02.764+05:30  INFO 39068 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-02T14:44:03.807+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44fb9978-01e1-3e31-a139-231810271f93
+2025-08-02T14:44:03.843+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.AccountProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:03.845+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.CustomerProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:03.847+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.KYCProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T14:44:04.577+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2025-08-02T14:44:04.590+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T14:44:04.590+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-08-02T14:44:04.960+05:30  INFO 39068 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-08-02T14:44:04.967+05:30  INFO 39068 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T14:44:04.970+05:30  INFO 39068 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2203 ms
+2025-08-02T14:44:05.175+05:30  WARN 39068 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T14:44:06.426+05:30  INFO 39068 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T14:44:06.899+05:30  WARN 39068 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T14:44:06.938+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T14:44:07.034+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T14:44:07.044+05:30  INFO 39068 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:44:07.078+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T14:44:07.079+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T14:44:07.576+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T14:44:07.581+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T14:44:07.585+05:30  INFO 39068 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T14:44:07.594+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754126047593 with initial instances count: 2
+2025-08-02T14:44:07.597+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2025-08-02T14:44:07.598+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754126047598, current=UP, previous=STARTING]
+2025-08-02T14:44:07.600+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085: registering service...
+2025-08-02T14:44:07.659+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2025-08-02T14:44:07.661+05:30  INFO 39068 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-02T14:44:07.671+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - registration status: 204
+2025-08-02T14:44:08.096+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Started AdminServiceApplication in 7.357 seconds (process running for 8.083)
+2025-08-02T14:45:13.527+05:30  INFO 39068 --- [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T14:45:13.528+05:30  INFO 39068 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T14:45:13.531+05:30  INFO 39068 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-02T14:49:07.081+05:30  INFO 39068 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:54:07.087+05:30  INFO 39068 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T14:58:26.957+05:30 ERROR 39068 --- [nio-8085-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$NotFound: [404] during [GET] to [http://localhost:8081/customer-api/customer-api/all] [CustomerProxy#getAllCustomers()]: [{"timestamp":"2025-08-02T09:28:26.934+00:00","status":404,"error":"Not Found","message":"No message available","path":"/customer-api/customer-api/all"}]] with root cause
+
+feign.FeignException$NotFound: [404] during [GET] to [http://localhost:8081/customer-api/customer-api/all] [CustomerProxy#getAllCustomers()]: [{"timestamp":"2025-08-02T09:28:26.934+00:00","status":404,"error":"Not Found","message":"No message available","path":"/customer-api/customer-api/all"}]
+	at feign.FeignException.clientErrorStatus(FeignException.java:228) ~[feign-core-12.4.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:203) ~[feign-core-12.4.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-12.4.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:104) ~[feign-core-12.4.jar:na]
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136) ~[feign-core-12.4.jar:na]
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70) ~[feign-core-12.4.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114) ~[feign-core-12.4.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70) ~[feign-core-12.4.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96) ~[feign-core-12.4.jar:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy79.getAllCustomers(Unknown Source) ~[na:na]
+	at com.bank.serviceImpl.AdminServiceImpl.getAllCustomers(AdminServiceImpl.java:29) ~[classes/:na]
+	at com.bank.controller.AdminController.dashboard(AdminController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-08-02T21:19:08.387+05:30  INFO 39068 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:22:58.575+05:30  INFO 39068 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-02T21:22:58.578+05:30  INFO 39068 --- [       Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADMIN-SERVICE with eureka with status DOWN
+2025-08-02T21:22:58.579+05:30  INFO 39068 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754149978579, current=DOWN, previous=UP]
+2025-08-02T21:22:58.581+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085: registering service...
+2025-08-02T21:22:58.611+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - registration status: 204
+2025-08-02T21:22:58.643+05:30  INFO 39068 --- [       Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-02T21:22:58.645+05:30  INFO 39068 --- [       Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-08-02T21:22:58.743+05:30  INFO 39068 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T21:23:01.747+05:30  INFO 39068 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-02T21:23:01.764+05:30  INFO 39068 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - deregister  status: 200
+2025-08-02T21:23:01.772+05:30  INFO 39068 --- [       Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T21:23:03.775+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Starting AdminServiceApplication using Java 17.0.15 with PID 39068 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service)
+2025-08-02T21:23:03.776+05:30 DEBUG 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T21:23:03.776+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T21:23:04.368+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44fb9978-01e1-3e31-a139-231810271f93
+2025-08-02T21:23:04.387+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.AccountProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:04.391+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.CustomerProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:04.393+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.KYCProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:04.522+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2025-08-02T21:23:04.524+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T21:23:04.524+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-08-02T21:23:04.849+05:30  INFO 39068 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-08-02T21:23:04.853+05:30  INFO 39068 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T21:23:04.854+05:30  INFO 39068 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1073 ms
+2025-08-02T21:23:04.939+05:30  WARN 39068 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T21:23:06.752+05:30  INFO 39068 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (2 additions, 0 deletions, 15 modifications)
+2025-08-02T21:23:07.179+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:07.213+05:30  INFO 39068 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T21:23:09.077+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:09.110+05:30  WARN 39068 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T21:23:09.134+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T21:23:09.140+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T21:23:09.141+05:30  INFO 39068 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:23:09.157+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T21:23:09.157+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T21:23:09.158+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T21:23:09.158+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T21:23:09.158+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T21:23:09.158+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T21:23:09.158+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T21:23:09.227+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T21:23:09.230+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T21:23:09.233+05:30  INFO 39068 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T21:23:09.235+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754149989235 with initial instances count: 5
+2025-08-02T21:23:09.237+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2025-08-02T21:23:09.238+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754149989238, current=UP, previous=STARTING]
+2025-08-02T21:23:09.238+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085: registering service...
+2025-08-02T21:23:09.262+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2025-08-02T21:23:09.264+05:30  INFO 39068 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-02T21:23:09.265+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - registration status: 204
+2025-08-02T21:23:11.123+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:11.134+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Started AdminServiceApplication in 9.259 seconds (process running for 23951.12)
+2025-08-02T21:23:11.134+05:30  INFO 39068 --- [       Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADMIN-SERVICE with eureka with status DOWN
+2025-08-02T21:23:11.135+05:30  INFO 39068 --- [       Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754149991135, current=DOWN, previous=UP]
+2025-08-02T21:23:11.135+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085: registering service...
+2025-08-02T21:23:11.140+05:30  INFO 39068 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-02T21:23:11.146+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - registration status: 204
+2025-08-02T21:23:11.196+05:30  INFO 39068 --- [       Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-02T21:23:11.209+05:30  INFO 39068 --- [       Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T21:23:14.224+05:30  INFO 39068 --- [       Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-02T21:23:14.243+05:30  INFO 39068 --- [       Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - deregister  status: 200
+2025-08-02T21:23:14.252+05:30  INFO 39068 --- [       Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2025-08-02T21:23:16.270+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Starting AdminServiceApplication using Java 17.0.15 with PID 39068 (C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service\target\classes started by Ashutosh in C:\Users\Ashutosh\Desktop\Training\myside\microservices-cursor-1\admin-service)
+2025-08-02T21:23:16.270+05:30 DEBUG 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Running with Spring Boot v3.1.2, Spring v6.0.11
+2025-08-02T21:23:16.271+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T21:23:16.774+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44fb9978-01e1-3e31-a139-231810271f93
+2025-08-02T21:23:16.788+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.AccountProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:16.791+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.CustomerProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:16.793+05:30  INFO 39068 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.bank.proxy.KYCProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-08-02T21:23:16.891+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2025-08-02T21:23:16.893+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T21:23:16.893+05:30  INFO 39068 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-08-02T21:23:17.199+05:30  INFO 39068 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-08-02T21:23:17.210+05:30  INFO 39068 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T21:23:17.210+05:30  INFO 39068 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 934 ms
+2025-08-02T21:23:17.296+05:30  WARN 39068 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-02T21:23:19.374+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:19.419+05:30  INFO 39068 --- [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-02T21:23:21.242+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:21.269+05:30  WARN 39068 --- [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T21:23:21.293+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T21:23:21.298+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T21:23:21.299+05:30  INFO 39068 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-02T21:23:21.301+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-02T21:23:21.302+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-02T21:23:21.345+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-02T21:23:21.348+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-02T21:23:21.350+05:30  INFO 39068 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-02T21:23:21.355+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754150001355 with initial instances count: 5
+2025-08-02T21:23:21.356+05:30  INFO 39068 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-SERVICE with eureka with status UP
+2025-08-02T21:23:21.357+05:30  INFO 39068 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754150001357, current=UP, previous=STARTING]
+2025-08-02T21:23:21.357+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085: registering service...
+2025-08-02T21:23:21.378+05:30  INFO 39068 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2025-08-02T21:23:21.379+05:30  INFO 39068 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-02T21:23:21.380+05:30  INFO 39068 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVICE/localhost:admin-service:8085 - registration status: 204
+2025-08-02T21:23:23.192+05:30  INFO 39068 --- [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-08-02T21:23:23.202+05:30  INFO 39068 --- [  restartedMain] com.bank.AdminServiceApplication         : Started AdminServiceApplication in 8.816 seconds (process running for 23963.188)
+2025-08-02T21:23:23.205+05:30  INFO 39068 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-02T21:28:21.313+05:30  INFO 39068 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:44 h
+[INFO] Finished at: 2025-08-02T21:28:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.1.2:run (default-cli) on project admin-service: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
