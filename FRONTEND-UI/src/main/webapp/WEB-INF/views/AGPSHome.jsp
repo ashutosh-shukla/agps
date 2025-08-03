@@ -499,13 +499,13 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="header-buttons justify-content-center justify-content-lg-end">
-                        <a href="${pageContext.request.contextPath}/account/open" class="digital-account-btn">
+                        <a href="/customers/register" class="digital-account-btn">
                             <i class="fas fa-plus-circle me-1"></i>Open Account
                         </a>
-                        <a href="${pageContext.request.contextPath}/login" class="login-btn">
+                        <a href="/login" class="login-btn">
                             <i class="fas fa-sign-in-alt me-1"></i>LOGIN
                         </a>
-                        <a href="${pageContext.request.contextPath}/admin/login" class="admin-btn">
+                        <a href="/admin-register" class="admin-btn">
                             <i class="fas fa-user-shield me-1"></i>ADMIN
                         </a>
                     </div>
@@ -680,7 +680,7 @@
                             </div>
                             <h5 class="quick-action-title">Create Account</h5>
                             <p class="text-muted mb-3">Join AGPS Bank family today</p>
-                            <a href="${pageContext.request.contextPath}/register" class="quick-action-btn">Sign Up Now</a>
+                            <a href="/customers/register" class="quick-action-btn">Sign Up Now</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
@@ -690,7 +690,7 @@
                             </div>
                             <h5 class="quick-action-title">Internet Banking</h5>
                             <p class="text-muted mb-3">Perform your first transaction</p>
-                            <a href="${pageContext.request.contextPath}/kyc/upload" class="quick-action-btn">Click Now</a>
+                            <a href="/login" class="quick-action-btn">Login Now</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
@@ -710,7 +710,7 @@
                             </div>
                             <h5 class="quick-action-title">Admin Panel</h5>
                             <p class="text-muted mb-3">Administrative access</p>
-                            <a href="${pageContext.request.contextPath}/admin/login" class="quick-action-btn">Admin Login</a>
+                            <a href="/admin-register" class="quick-action-btn">Admin Panel</a>
                         </div>
                     </div>
                 </div>

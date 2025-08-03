@@ -2,6 +2,7 @@ package com.bank.controller;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -47,9 +48,6 @@ public class CustomerController {
         return "Hello from Customer Service!";
     }
 
- // Add this method to your existing CustomerController class
-
-   
     @PostMapping("/register")
     public ResponseEntity<Customer> registerCustomer(@RequestBody Customer customer) {
         try {
@@ -57,7 +55,8 @@ public class CustomerController {
             return ResponseEntity.ok(savedCustomer);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }}
+        }
+    }
 
     @GetMapping("/{customerId}")
     public Customer getCustomer(@PathVariable String customerId) {
@@ -76,13 +75,12 @@ public class CustomerController {
         customerService.changePassword(customerId, currentPassword, newPassword);
     }
 
-	    @PutMapping("/{customerId}/change-email")
-	    public void changeEmail(@PathVariable String customerId, @RequestParam String newEmail) {
-	        customerService.changeEmail(customerId, newEmail);
-	    }
+    @PutMapping("/{customerId}/change-email")
+    public void changeEmail(@PathVariable String customerId, @RequestParam String newEmail) {
+        customerService.changeEmail(customerId, newEmail);
+    }
 
-    // --- Account API calls ---
-
+    // Account API calls
     @GetMapping("/{customerId}/account")
     public Account getAccount(@PathVariable String customerId) {
         return accountServiceProxy.getAccountByCustomerId(customerId);
@@ -105,15 +103,13 @@ public class CustomerController {
         accountServiceProxy.transfer(customerId, toAccountNumber, amount);
     }
 
-    // --- Transaction API call ---
-
+    // Transaction API call
     @GetMapping("/{customerId}/transactions")
     public List<Transaction> getTransactionHistory(@PathVariable String customerId) {
         return accountServiceProxy.getTransactionHistory(customerId);
     }
 
-    // --- Authentication API call ---
-
+    // Authentication API call
     @PostMapping("/validate-credentials")
     public ResponseEntity<Object> validateCredentials(@Valid @RequestBody CredentialValidationRequest request) {
         try {
@@ -127,7 +123,66 @@ public class CustomerController {
            return ResponseEntity
         .status(HttpStatus.BAD_REQUEST)
         .body(CredentialValidationResponse.error("Validation failed: " + e.getMessage()));
+        }
+    }
+}
 
+// Admin-facing Customer API endpoints
+@RestController
+@RequestMapping("/customer-api")
+public class CustomerApiController {
+
+    @Autowired
+    private CustomerService customerService;
+
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("Customer Service API is running");
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<Customer>> getAllCustomers() {
+        try {
+            List<Customer> customers = customerService.getAllCustomers();
+            return ResponseEntity.ok(customers);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    @GetMapping("/{customerId}")
+    public ResponseEntity<Customer> getCustomerById(@PathVariable String customerId) {
+        try {
+            Customer customer = customerService.getCustomer(customerId);
+            return ResponseEntity.ok(customer);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+    @PutMapping("/{customerId}/status")
+    public ResponseEntity<Customer> updateCustomerStatus(
+            @PathVariable String customerId, 
+            @RequestBody Map<String, String> statusUpdate) {
+        try {
+            String newStatus = statusUpdate.get("status");
+            Customer updatedCustomer = customerService.updateCustomerStatus(customerId, newStatus);
+            return ResponseEntity.ok(updatedCustomer);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    @PutMapping("/{customerId}/kyc-status")
+    public ResponseEntity<Customer> updateCustomerKycStatus(
+            @PathVariable String customerId, 
+            @RequestBody Map<String, String> kycStatusUpdate) {
+        try {
+            String newKycStatus = kycStatusUpdate.get("kycStatus");
+            Customer updatedCustomer = customerService.updateCustomerKycStatus(customerId, newKycStatus);
+            return ResponseEntity.ok(updatedCustomer);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 }

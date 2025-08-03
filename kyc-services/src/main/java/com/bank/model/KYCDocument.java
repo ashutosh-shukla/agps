@@ -52,6 +52,17 @@ public class KYCDocument {
     @Column(name = "status", length = 20)
     private String status = "PENDING";
     
+    @Lob
+    @Column(name = "admin_remarks", columnDefinition = "CLOB")
+    private String adminRemarks;
+    
+    @Column(name = "reviewed_by")
+    private String reviewedBy;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "reviewed_at")
+    private Date reviewedAt;
+    
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at")
     private Date createdAt;
@@ -159,6 +170,30 @@ public class KYCDocument {
     
     public void setStatus(String status) {
         this.status = status;
+    }
+    
+    public String getAdminRemarks() {
+        return adminRemarks;
+    }
+    
+    public void setAdminRemarks(String adminRemarks) {
+        this.adminRemarks = adminRemarks;
+    }
+    
+    public String getReviewedBy() {
+        return reviewedBy;
+    }
+    
+    public void setReviewedBy(String reviewedBy) {
+        this.reviewedBy = reviewedBy;
+    }
+    
+    public Date getReviewedAt() {
+        return reviewedAt;
+    }
+    
+    public void setReviewedAt(Date reviewedAt) {
+        this.reviewedAt = reviewedAt;
     }
     
     public Date getCreatedAt() {

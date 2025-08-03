@@ -13,6 +13,7 @@ import com.bank.services.KYCDocumentService;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 
 @Controller
 @RequestMapping("/kyc/api")
@@ -119,5 +120,59 @@ public class KYCController {
     @GetMapping("/upload-form")
     public String showUploadForm(Model model) {
         return "kyc-upload";
+    }
+
+    // Admin endpoints for KYC management
+    @GetMapping("/all")
+    @ResponseBody
+    public ResponseEntity<List<KYCDocument>> getAllKYCDocuments() {
+        try {
+            List<KYCDocument> documents = kycDocumentService.getAllDocuments();
+            return ResponseEntity.ok(documents);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
+        }
+    }
+
+    @GetMapping("/{id}")
+    @ResponseBody
+    public ResponseEntity<KYCDocument> getKYCDocumentById(@PathVariable Long id) {
+        try {
+            KYCDocument document = kycDocumentService.getDocumentById(id);
+            if (document != null) {
+                return ResponseEntity.ok(document);
+            } else {
+                return ResponseEntity.notFound().build();
+            }
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
+        }
+    }
+
+    @GetMapping("/customer/{customerId}")
+    @ResponseBody
+    public ResponseEntity<List<KYCDocument>> getKYCDocumentsByCustomerId(@PathVariable String customerId) {
+        try {
+            List<KYCDocument> documents = kycDocumentService.getDocumentsByCustomerId(customerId);
+            return ResponseEntity.ok(documents);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
+        }
+    }
+
+    @PutMapping("/{id}/status")
+    @ResponseBody
+    public ResponseEntity<KYCDocument> updateKYCDocumentStatus(
+            @PathVariable Long id, 
+            @RequestBody Map<String, String> statusUpdate) {
+        try {
+            String newStatus = statusUpdate.get("status");
+            String remarks = statusUpdate.get("remarks");
+            
+            KYCDocument updatedDocument = kycDocumentService.updateDocumentStatus(id, newStatus, remarks);
+            return ResponseEntity.ok(updatedDocument);
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().build();
+        }
     }
 }

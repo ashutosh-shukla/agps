@@ -12,9 +12,11 @@ public interface KYCDocumentService {
 
     List<KYCDocument> getAllDocuments();
 
-    Optional<KYCDocument> getDocumentById(Long id);
+    KYCDocument getDocumentById(Long id);
 
     List<KYCDocument> getDocumentsByStatus(String status);
+
+    List<KYCDocument> getDocumentsByCustomerId(String customerId);
 
     KYCDocument saveDocument(KYCDocument document);
 
@@ -23,7 +25,7 @@ public interface KYCDocumentService {
                                  MultipartFile panFront, MultipartFile panBack,
                                  MultipartFile photograph) throws IOException;
 
-    void updateDocumentStatus(Long id, String status);
+    KYCDocument updateDocumentStatus(Long id, String status, String remarks);
 
     void deleteDocument(Long id);
 }

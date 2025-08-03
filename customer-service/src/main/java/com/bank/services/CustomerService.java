@@ -11,10 +11,8 @@ public interface CustomerService {
 
     Customer createCustomer(Customer customer);
     Customer updateDetails(String customerId, Customer customer);
-  
     Customer getCustomer(String customerId);
-   Optional<Customer> findByEmail(String email);
-      
+    Optional<Customer> findByEmail(String email);
     
     void save(Customer customer);  //this is created by ashutosh for updating customer details in dashboard
 
@@ -23,4 +21,8 @@ public interface CustomerService {
     
     CredentialValidationResponse validateCredentials(CredentialValidationRequest request);
 
+    // Admin operations
+    List<Customer> getAllCustomers();
+    Customer updateCustomerStatus(String customerId, String status);
+    Customer updateCustomerKycStatus(String customerId, String kycStatus);
 }

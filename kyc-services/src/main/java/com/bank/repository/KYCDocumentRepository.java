@@ -16,6 +16,8 @@ public interface KYCDocumentRepository extends JpaRepository<KYCDocument, Long> 
     
     List<KYCDocument> findByEmailContainingIgnoreCase(String email);
     
+    List<KYCDocument> findByFullNameContainingIgnoreCase(String fullName);
+    
     @Query("SELECT k FROM KYCDocument k ORDER BY k.createdAt DESC")
     List<KYCDocument> findAllOrderByCreatedAtDesc();
     
